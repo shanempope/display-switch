@@ -29,7 +29,6 @@ fn main() {
         }
         if removed_devices.contains(&config.usb_device) {
             info!("Detected device we're looking for disconnected {:?}", &config.usb_device);
-            display_control::wiggle_mouse();
             display_control::switch_to(config.monitor_input_usb_disconnected).unwrap_or_else(|err| {
                 error!("Cannot switch monitor input: {:?}", err);
             });
