@@ -25,6 +25,7 @@ Configuration file settings:
 ```ini
   usb_device = "1050:0407"
   monitor_input = "Hdmi1"
+  monitor_input_usb_disconnected = "DisplayPort1"
 ```
 
 `usb_device` is which USB device to watch (vendor id / device id in hex), and `monitor_input` is which monitor input
