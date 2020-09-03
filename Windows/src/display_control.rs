@@ -21,6 +21,7 @@ pub enum InputSource {
     DisplayPort2 = 0x10,
     Hdmi1 = 0x11,
     Hdmi2 = 0x12,
+    MyHdmi1 = 0x05,
 }
 
 pub fn log_current_source() -> Result<()> {
